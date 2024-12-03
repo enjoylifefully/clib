@@ -26,8 +26,6 @@ typedef struct {
     __vec_push(vec, &_e, sizeof(type));                                        \
   })
 
-// fazer capacity guardar o numero de bytes inves da quantidade de elemntos para
-// que nao ocorra acesso indevido
 bool __vec_grow(vector *vec, usize elem_size);
 
 bool __vec_push(vector *vec, void *elem, usize elem_size);
